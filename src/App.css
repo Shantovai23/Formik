@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.formDiv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ border-radius: 4px;
+  padding: 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label{
+  font-weight: bold;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 5px;
+}
+input[type='text'],
+input[type='email']{
+  display: block;
+  width: 300px;
+  font-size: 18px;
+  line-height: 1.42;
+  color: #555;
+  background-color: #fff;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  padding: 12px 22px;
+  cursor: pointer;
+  background-color: #FF3377;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover{
+background-color:#ff1160;
+}
+.heading{
+  text-align: center;
 }
